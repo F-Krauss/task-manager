@@ -5,21 +5,91 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium",
+        "autoIncrement": true,
+        "buildNumber": "1.0.0"
+      },
+      "android": {
+        "resourceClass": "m-medium",
+        "autoIncrement": true,
+        "buildNumber": "1"
+      },
+      "env": {
+        "APP_ENV": "development",
+        "API_URL": "https://dev.api.example.com"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m-medium",
+        "autoIncrement": true,
+        "buildNumber": "1.0.0"
+      },
+      "android": {
+        "resourceClass": "m-medium",
+        "autoIncrement": true,
+        "buildNumber": "1"
+      },
+      "channel": "preview",
+      "env": {
+        "APP_ENV": "preview",
+        "API_URL": "https://preview.api.example.com"
+      }
     },
     "production": {
+      "distribution": "store",
+      "ios": {
+        "resourceClass": "m-high",
+        "autoIncrement": true,
+        "buildNumber": "1.0.0",
+        "production": true
+      },
       "android": {
-        // Add this block here
-        "gradle": {
-          "version": "8.3"
-        }
+        "resourceClass": "m-high",
+        "autoIncrement": true,
+        "buildNumber": "1"
+      },
+      "channel": "production",
+      "env": {
+        "APP_ENV": "production",
+        "API_URL": "https://api.example.com"
       }
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleId": "your-apple-id@example.com",
+        "ascAppId": "your-app-store-connect-app-id",
+        "teamId": "YOUR_APPLE_DEVELOPER_TEAM_ID",
+        "apiKeyPath": "./private_keys/AuthKey_ABCDEFG.p8",
+        "fastlane": true,
+        "track": "production",
+        "waitForProcessing": true,
+        "submissionId": "optional-id-for-submission"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./private_keys/google-play-service-account.json",
+        "track": "production",
+        "releaseStatus": "completed",
+        "changesNotSentForReview": false,
+        "rollout": 1.0
+      }
+    },
+    "preview": {
+      "ios": {
+        "appleId": "your-apple-id@example.com",
+        "track": "internal",
+        "submissionId": "optional-id-for-preview-submission"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./private_keys/google-play-service-account.json",
+        "track": "internal",
+        "releaseStatus": "completed"
+      }
+    }
   }
 }
