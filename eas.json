@@ -12,7 +12,12 @@
       "distribution": "internal"
     },
     "production": {
-      "autoIncrement": true
+      "android": {
+        // Add this block here
+        "gradle": {
+          "version": "8.3"
+        }
+      }
     }
   },
   "submit": {
