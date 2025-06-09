@@ -39,12 +39,12 @@
     "production": {
       "distribution": "store",
       "ios": {
-        "resourceClass": "large",
+        "resourceClass": "medium",
         "autoIncrement": true
         // REMOVED: "production": true, // This is not allowed here. The profile name 'production' implies it.
       },
       "android": {
-        "resourceClass": "large",
+        "resourceClass": "medium",
         "autoIncrement": true
       },
       "channel": "production",
