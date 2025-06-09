@@ -31,6 +31,12 @@
         "projectId": "289724ac-dd12-4a96-8aab-5196ac37290c"
       }
     },
-    "owner": "krauss_fukunaga"
+    "owner": "krauss_fukunaga",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/289724ac-dd12-4a96-8aab-5196ac37290c"
+    }
   }
 }
