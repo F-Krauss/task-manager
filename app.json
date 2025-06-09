@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "task-manager",
-    "slug": "task-manager",
+    "slug": "taskmanagerapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,10 +20,17 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.krauss_fukunaga.taskmanagerapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "be0d61f7-2c68-4789-b37d-ef4d73566dae"
+      }
+    },
+    "owner": "krauss_fukunaga"
   }
 }
