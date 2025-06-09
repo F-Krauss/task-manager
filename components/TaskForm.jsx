@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, Pressable, Text, StyleSheet } from 'react-native';
-import { globalStyles, COLORS } from '../styles'; // Adjust path if styles.js is elsewhere
+import { globalStyles, COLORS } from '../styles'; 
 
 export default function TaskForm({ onAdd }) {
   const [title, setTitle] = useState('');

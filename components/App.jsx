@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, SafeAreaView, StatusBar } from 'react-native';
-import TaskForm from './components/TaskForm';
-import Filter from './components/Filter';
-import TaskList from './components/TaskList';
-import { globalStyles, COLORS } from './styles';
-
+import TaskForm from './TaskForm';
+import Filter from './Filter';
+import TaskList from './TaskList';
+import { globalStyles, COLORS } from '../styles'
 function App() {
   const [tasks, setTasks] = useState([
 

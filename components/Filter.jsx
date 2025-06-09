@@ -1,4 +1,3 @@
-// components/Filter.js
 import React from 'react';
 import { View, Text, StyleSheet, Platform } from 'react-native';
 import { Picker } from '@react-native-picker/picker';

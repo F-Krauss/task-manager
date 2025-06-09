@@ -1,8 +1,7 @@
-// components/TaskItem.jsx
 import React from 'react';
 import { View, Text, Pressable, StyleSheet, Alert } from 'react-native';
-import CustomCheckBox from './CustomCheckBox'; // IMPORT YOUR CUSTOM CHECKBOX
-import { globalStyles, COLORS } from '../styles'; // Adjusted path
+import CustomCheckBox from './CustomCheckBox'; 
+import { globalStyles, COLORS } from '../styles';
 
 export default function TaskItem({ task, onToggle, onDelete, onEdit }) {
   const handleEdit = () => {
