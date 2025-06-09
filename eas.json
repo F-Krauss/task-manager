@@ -11,6 +11,7 @@
         "resourceClass": "medium",
         "autoIncrement": true
       },
+      
       "android": {
         "resourceClass": "medium",
         "autoIncrement": true
