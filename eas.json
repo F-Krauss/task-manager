@@ -60,9 +60,6 @@
       "ios": {
         "appleId": "your-apple-id@example.com",
         "ascAppId": "your-app-store-connect-app-id"
-        // REMOVED: "teamId": "YOUR_APPLE_DEVELOPER_TEAM_ID", // This is handled by EAS credentials, not here.
-        // As discussed before, other submission properties like apiKeyPath, fastlane, track
-        // are generally arguments to 'eas submit' or configured via 'eas credentials'.
       },
       "android": {
         "serviceAccountKeyPath": "./private_keys/google-play-service-account.json"
